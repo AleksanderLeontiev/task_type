@@ -52,4 +52,4 @@ const work: Order = {
   sum: 1,
   workerId: 22,
 };
-filterOnlyInitialAndInWorkOrder(work);
+// filterOnlyInitialAndInWorkOrder(work);

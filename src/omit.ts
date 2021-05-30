@@ -1,4 +1,4 @@
-const omit = <T extends Record<any, any>, K extends keyof T>(
+export const omit = <T extends Record<any, any>, K extends keyof T>(
   obj: T,
   keyToOmit: K
 ): Record<any, any> => {

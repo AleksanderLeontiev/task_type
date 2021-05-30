@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const orderStates = [
+export const orderStates = [
   "initial",
   "inWork",
   "buyingSupplies",
@@ -10,7 +10,7 @@ const orderStates = [
 
 type OrderState = typeof orderStates[number];
 
-const getUserOrderStates = (orderStates: OrderState[]): OrderState[] => {
+export const getUserOrderStates = (orderStates: OrderState[]): OrderState[] => {
   const filteredStates = [] as OrderState[];
   orderStates.forEach((element) => {
     if (element !== "az" && element !== "producing") {
