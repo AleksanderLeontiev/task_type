@@ -6,8 +6,7 @@
     "test": "jest --coverage",
     "lint": "prettier --check . && eslint . --ext .js,.ts && tsc --noEmit",
     "lint:fix": "prettier --write . && eslint . --fix --ext .js,.ts && tsc --noEmit",
-    "start": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "ts:check": "tsc --noEmit"
   },
   "repository": {
     "type": "git",

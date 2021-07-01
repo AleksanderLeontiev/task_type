@@ -10,9 +10,11 @@ export const orderStates = [
 
 type OrderState = typeof orderStates[number];
 
-export const getUserOrderStates = (orderStates: OrderState[]): OrderState[] => {
-  const filteredStates = [] as OrderState[];
-  orderStates.forEach((element) => {
+export const getUserOrderStates = (
+  orderStates1: OrderState[]
+): Exclude<OrderState, "az" | "producing">[] => {
+  const filteredStates = [] as Exclude<OrderState, "az" | "producing">[];
+  orderStates1.forEach((element) => {
     if (element !== "az" && element !== "producing") {
       filteredStates.push(element);
     }

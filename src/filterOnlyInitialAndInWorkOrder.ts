@@ -36,13 +36,5 @@ export const filterOnlyInitialAndInWorkOrder = (
   if (order.state === "initial" || order.state === "inWork") {
     return order;
   }
-
   return null;
 };
-
-const work: Order = {
-  state: "inWork",
-  sum: 1,
-  workerId: 22,
-};
-

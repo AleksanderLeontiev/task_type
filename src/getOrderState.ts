@@ -30,24 +30,4 @@ export type Order =
       fullfillmentDate: Date;
     };
 
-
-
-export const getOrderState = (order: Order): "initial" | "inWork" | "buyingSupplies" | "producing" | "fullfilled" => order.state;
-
-const getSum = (order: Order): number => order.sum;
-
-console.log(
-  getOrderState({
-    state: "inWork",
-    sum: 1,
-    workerId: 1,
-  })
-);
-
-console.log(
-  getSum({
-    state: "inWork",
-    sum: 1,
-    workerId: 1,
-  })
-);
+export const getOrderState = (order: Order): Order["state"] => order.state;
